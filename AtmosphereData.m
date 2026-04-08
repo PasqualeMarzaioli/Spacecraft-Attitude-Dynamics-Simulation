@@ -1,3 +1,20 @@
+%% AtmosphereData.m
+%
+% Authors:
+% Pasquale Marzaioli
+% Paolo Iaccarino
+% Federica Pirozzi
+% Silvia Preziosi
+%
+% Description:
+% This function provides a simplified atmospheric density model for Low Earth Orbit (LEO)
+% altitudes. It returns a structure array containing altitude values from 10 m to 1000 m
+% and corresponding atmospheric density values. This data is used in the spacecraft
+% simulation to model aerodynamic drag forces acting on the satellite.
+%
+% Outputs:
+% - AtmosphereModel: Structure array with fields Altitude_m and Density_kg_m3
+
 function AtmosphereModel = AtmosphereData
     
     altitude_values = [10, 20, 30, 40, 50, 60, 70, 80, 90, 100, ...

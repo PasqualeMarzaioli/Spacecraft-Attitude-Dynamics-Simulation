@@ -1,3 +1,21 @@
+%% IGRF2020MagneticField.m
+%
+% Authors:
+% Pasquale Marzaioli
+% Paolo Iaccarino
+% Federica Pirozzi
+% Silvia Preziosi
+%
+% Description:
+% This function provides simplified coefficients for the International Geomagnetic Reference
+% Field (IGRF) 2020 model. It returns a structure array containing Gauss spherical harmonic
+% coefficients (g_nm and h_nm) for degree n=1 to 3 and order m=0 to 3. These coefficients
+% are used to compute the Earth's magnetic field in the spacecraft simulation for modeling
+% magnetic torque disturbances and magnetorquer actuation.
+%
+% Outputs:
+% - DGRF2020: Structure array with fields n, m, g_nm, h_nm, and description
+
 function DGRF2020 = IGRF2020MagneticField
     
     % --- Data IGRF2020

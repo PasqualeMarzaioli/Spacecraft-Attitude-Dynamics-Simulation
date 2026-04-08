@@ -1,3 +1,22 @@
+%% SCModel.m
+%
+% Authors:
+% Pasquale Marzaioli
+% Paolo Iaccarino
+% Federica Pirozzi
+% Silvia Preziosi
+%
+% Description:
+% This function defines the spacecraft (SC) structural model, including geometry, mass
+% properties, and surface characteristics. It computes the inertia matrix, surface normals,
+% force radii, optical properties (diffuse and specular coefficients), and center of mass
+% shift. The model represents a large satellite with a cubic body and deployable solar
+% panels, used in the attitude dynamics simulation.
+%
+% Outputs:
+% - EXTRACTED_DATA: Structure with extracted model data (inertia, surfaces, etc.)
+% - MODEL_SC: Structure array with per-surface data
+
 function [EXTRACTED_DATA, MODEL_SC] = SCModel
     
     % -------------------------------
